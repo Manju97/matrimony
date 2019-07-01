@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Vamlmiki Matrimony</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="images/logo1.png" type="image/x-icon">
+        
+        <!-- Google Fonts -->	
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        
+        <!-- Bootstrap Stylesheet -->	
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Font Awesome Stylesheet -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+            
+        <!-- Custom Stylesheets -->	
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" id="cpswitch" href="css/orange.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <script>
+
+function giveMeAge(str){
+	
+	if(str!="")
+	{
+	var yearSave=str.substring(0,4);
+	//alert(yearSave);
+	var d = new Date();
+var n = d.getFullYear();
+
+var s=n-yearSave;
+//alert(s);
+var ageText=document.getElementById('takeYourAge');
+ageText.value=s;
+	//alert(yearSave);
+	}
+	else
+	{
+		var s=0;
+		var ageText=document.getElementById('takeYourAge');
+ageText.value=s;
+	}
+}
+</script>
+    
+    <body>
+    
+        <!--====== LOADER =====-->
+    
+        
+        
+        <!--============= TOP-BAR ===========-->
+        
+            <div class="container">
+               
+          
+     
+
+       <nav class="navbar navbar-default main-navbar navbar-custom navbar-transparent" >
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" id="menu-button">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>                        
+                            </button>
+                            <div class="hidden-xs hidden-sm hidden-lg">
+                               <h2 style='color:#f47820'>Valmiki Matrimony</h2>
+                            </div>
+                            <a href="index.html" class="hidden-xs hidden-sm"><img src="images/logo1.png"></a>
+                        </div><!-- end navbar-header -->
+                    
+                        <div class="collapse navbar-collapse" >
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown active"><a href="login.php" class="dropdown-toggle" >Login<span><i class="fa fa-angle-down"></i></span></a>
+                                    		
+                                </li>
+                               
+                                <li class="dropdown active"><a href="contact.html" class="dropdown-toggle" >Contact Us<span><i class="fa fa-angle-down"></i></span></a>
+                                    		
+                                </li>
+                                
+                            </ul>
+                        </div><!-- end navbar collapse -->
+                    </div><!-- end container -->
+                 </nav><!-- end navbar -->
+          </div><!-- end container -->
+		  <br>
+		  <br>
+        <div class="sidenav-content">
+                <div id="mySidenav" class="sidenav" >
+                    <h2 ><img src="images/logo1.png"></h2>
+    
+                    <div id="main-menu">
+                        <div class="closebtn">
+                            <button class="btn btn-default" id="closebtn">&times;</button>
+                        </div><!-- end close-btn -->
+                        
+                        <div class="list-group panel">
+                        
+                            <a href="#home-links" class="list-group-item active" data-toggle="collapse" data-parent="#main-menu"><span><i class="fa fa-home link-icon"></i></span>Login<span><i class="fa fa-chevron-down arrow"></i></span></a>
+                          
+                            
+                            
+                            
+                            <a href="contact.html" class="list-group-item"><span><i class="fa fa-globe link-icon"></i></span>Contact Us<span><i class="fa fa-chevron-down arrow"></i></span></a>
+    
+    
+                            
+                         
+                        </div><!-- end list-group -->
+                    </div><!-- end main-menu -->
+                </div><!-- end mySidenav -->
+            </div><!-- end sidenav-content -->
+        
+        
+        <!--================ PAGE-COVER ===============-->
+      
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                    	<h1 class="page-title">Upload profile
+						</h1>
+                        
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+      
+        
+        
+        <!--===== INNERPAGE-WRAPPER ====-->
+        <section class="innerpage-wrapper" style='margin-top:-100px'>
+        	<div id="contact-us" class="innerpage-section-padding">
+                <div class="container">
+                    <div class="row" >
+
+                        <div class="col-sm-6 col-md-5 no-pd-r">
+                        	<div class="custom-form contact-form">
+                            	<h3><font style="comic" align="center">Upload Profiles</font></h3>
+                                
+                                <form method="POST" id="register-form" class="register-form" action="insert_member.php" enctype="multipart/form-data">
+                                        
+                                    <div class="form-group">
+                                         <input type="text" class="form-control" name="f_name" id="f_name" placeholder="First_Name"  required/>
+                                         
+                                    </div>
+									<div class="form-group">
+                                         <input type="text" class="form-control" name="l_name" id="l_name" placeholder="Last_name"  required/>
+                                 
+                                    </div>
+									<div class="form-group">
+                                        <input type="date" class="form-control" name="dob" id='age' onblur="giveMeAge(this.value)" placeholder="Date of Birth">
+										
+                                    </div>
+						            <div class="form-group">
+                                     <input type="text" class="form-control" name="age" id="takeYourAge" placeholder="Your Age"/>
+								
+                                     </div>
+                                     
+									<div class="form-group">
+                                         <input type="text" class="form-control" name="religion" id="religion" placeholder="Religion"  required/>
+                                      
+                                    </div>
+									<div class="form-group">
+                                         <select class="form-control" name="gender" id="gender" />
+							                 <option value=''>Select Gender</option>
+							                    <option value='Male'>Male</option>
+							                   <option value='Female'>Female</option>
+											   </select>
+                                    </div>
+                                    <div class="form-group">
+                                         <select class="form-control" name="education" id="education" />
+							                 <option value='education'>Qualification</option>
+							                    <option value='10th'>10th</option>
+							                   <option value='PUC'>PUC</option>
+							                   <option value='ITI'>ITI</option>
+							                   <option value='Diploma'>Diploma</option>
+							                   <option value='BA'>BA</option>
+							                   <option value='MA'>MA</option>											   
+							                   <option value='Bsc'>Bsc</option>
+											   <option value='Msc'>Msc</option>
+							                   <option value='BCA'>BCA</option>
+							                   <option value='MCA'>MCA</option>
+							                   <option value='BCom'>BCom</option>
+							                   <option value='Mcom'>Mcom</option>
+							                   <option value='MBA'>MBA</option>
+							                   <option value='Teacher'>Teacher</option>
+							                   <option value='Lawyer'>Lawyer</option>
+							                   <option value='Medical'>Medical</option>
+							                   <option value='BE'>BE Electrical</option>
+											   <option value='Fashion Designing'>Fashion Designing</option>
+											   <option value='Others'>Others</option>
+											   </select>
+                                         
+                                    </div>
+                                       <div class="form-group">
+                                         <select class="form-control" name="job" id="job" />
+							                 <option value='job'>job</option>
+							                    <option value='Farmer'>Farmer</option>
+							                   <option value='Business'>Business</option>
+							                   <option value='Government'>Government</option>
+							                   <option value='IT'>IT</option>
+							                   <option value='Lawyer'>Lawyer</option>
+							                   <option value='Doctor'>Doctor</option>
+							                   <option value='Engineer'>Engineer</option>
+							                   <option value='Driver'>Driver</option>						                  
+							                   <option value='Others'>Others</option>
+											   
+										 </select>
+                                    </div>
+                                    <div class="form-group">
+                                         <input type="text" class="form-control" name="mobile" id="mobile" placeholder="mobile" required/>
+                                        
+                                    </div>
+                                       <div class="form-group">
+                                         <input type="text" class="form-control" name="email" id="email" placeholder="email"  required/>
+                                        
+                                    </div>
+									 <div class="form-group">
+                                         <input type="text" class="form-control" name="password" id="password" placeholder="password"  required/>
+                                     
+                                    </div>
+									<div class="form-group">
+                                          <textarea  placeholder="Enter Address" name="address" id='address'  class="form-control" rows='4'></textarea>
+                                    </div>
+	                                <div class="form-group">
+                                        <input type="file" name="file" required/>
+                                           </div>
+										   
+                                        
+                                    
+                            </div><!-- end contact-form -->
+                        </div>
+						
+						 <div class="col-sm-6 col-md-5 no-pd-r">
+                        	<div class="custom-form contact-form">
+                            	
+                                
+                                                  <br><br>            
+                                    <div class="form-group"><label name="fathername"></label>
+                                         <input type="text" class="form-control" name="father_name" id="father_name" placeholder="father_name"  required/>
+                                         
+                                    </div>
+									<div class="form-group">
+                                         <input type="text" class="form-control" name="mother_name" id="mother_name" placeholder="mother_name"  required/>
+                                         
+                                    </div>
+									
+									<div class="form-group">
+                                         <input type="text" class="form-control" name="siblings" id="siblings" placeholder="siblings"  required/>
+                                         
+                                    </div>
+									<div class="form-group">
+                                         <input type="text" class="form-control" name="height" id="height" placeholder="height"  required/>
+                                         
+                                    </div>
+                                    <div class="form-group">
+                                         <input type="text" class="form-control" name="b_time" id="b_time" placeholder="b_time"  required/>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                         <select class="form-control" name="nakshatra" id="nakshatra" placeholder="nakshatra" required/>
+                                                <option value='nakshatra'>nakshatra</option>
+                                                <option value='ashwini'>Ashwini</option>
+							                    <option value='bharani'>Bharani</option>
+							                   <option value='krutthika'>Krutthika</option>					                 
+							                   <option value='rohini'>Rohini</option>
+							                   <option value='mrughashira'>Mrughashira</option>
+							                   <option value='arudra'>Arudra</option>
+							                   <option value='punarvasu'>Punarvasu</option>
+							                   <option value='pushya'>Pushya</option>
+							                   <option value='ashlesha'>Ashlesha</option>
+							                   <option value='makha(magha)'>Makha(magha)</option>
+							                   <option value='pubba(purva-palguni)'>Pubba(purva-palguni)</option>
+							                   <option value='uttara(uttara-palguni)'>Uttara(uttara-palguni)</option>
+							                   <option value='hasta'>Hasta</option>
+							                   <option value='chitta'>Chitta</option>
+							                   <option value='swathi'>Swathi</option>
+							                   <option value='vishska'>Vishska</option>
+							                   <option value='anuradha'>Anuradha</option>
+							                   <option value='jyeshta'>Jyeshta</option>
+							                   <option value='moola'>Moola</option>
+							                   <option value='purvashada'>Purvashada</option>
+							                   <option value='uttarashada'>Uttarashada</option>
+							                   <option value='shravana'>Shravana</option>
+							                   <option value='dhanishta(shravistha)'>Dhanishta(shravistha)</option>
+							                   <option value='shatabhisha(shataraka)'>Shatabhisha(shataraka)</option>
+							                   <option value='purvabhadra(purvabhadrapada)'>Purvabhadra(purvabhadrapada)</option>
+							                   <option value='uttarabhadra(uttarabhadrapada)'>Uttarabhadra(uttarabhadrapada)</option>
+							                   <option value='revathi'>Revathi</option>
+											   </select>
+											  
+                                        
+                                    </div>
+                                    <div class="form-group">
+                                         <input type="text" class="form-control" name="color" id="color" placeholder="Your Skin Color"  required/>
+                                     
+                                    </div>
+									 <div class="form-group">
+                                         <select class="form-control" name="rashi" id="rashi" placeholder="rashi"  required/>
+                                           <option value='rashi'>rashi</option>
+							                    <option value='mesha(aries)'>Mesha(Aries)</option>
+							                   <option value='vrushabha(taurus)'>Vrushabha(Taurus)</option>
+							                   <option value='mithuna(gemini)'>Mithuna(Gemini)</option>
+							                   <option value='karkataka(cancer)<'>Karkataka(Cancer)</option>
+							                   <option value='simha(leo)'>Simha(leo)</option>
+							                   <option value='kanya(virgo)'>Kanya(virgo)</option>
+							                   <option value='thula(libra)'>Thula(Libra)</option>
+							                   <option value='vrishchika(scorpio)'>Vrishchika(Scorpio)</option>
+							                   <option value='dhanu(sagittarius)'>Dhanu(Sagittarius)</option>
+							                   <option value='makara(capricorn)'>Makara(Capricorn)</option>
+							                   <option value='kumbha(aquarius)'>Kumbha(aquarius)</option>
+							                   <option value='meena(pisces)'>Meena(Pisces</option>
+											   </select>
+											  
+                                    </div>
+									<div class="form-group">
+                                         <input type="text" class="form-control" name="god" id="god" placeholder="god"  required/>
+                                     
+                                    </div>
+									<div class="form-group">
+                                         <select class="form-control" name="region" id="region" />
+							                 <option value='South Karnataka'>South Karnataka</option>
+							                   <option value='North Karnataka'>North Karnataka</option>
+											   </select>
+                                    </div>
+									<div class="form-group">
+                                         <textarea  placeholder="Enter Expectations" name="expectations" id='expectations'  class="form-control" rows='4'></textarea>
+                                     
+                                    </div>
+									
+									
+							</div>
+						</div>
+						
+						 
+                                  
+										   <!-- end columns -->
+                        </div><!-- end columns -->
+						
+						 <button class="btn btn-orange btn-block" name="submit" id="submit" class="form-submit" value="register"style='width:180px'>Submit</button>
+                                           
+                              
+                                 
+	                                 </form>
+                        </div><!-- end columns -->
+                       </section><!-- end columns -->
+                     
+                     
+                                
+										   
+                            </div><!-- end map -->
+                        </div><!-- end columns -->
+                        
+                    </div><!-- end row -->
+                </div><!-- end container -->   
+            </div><!-- end contact-us -->
+        </section><!-- end innerpage-wrapper -->
+        
+        
+      
+        
+        
+        <!--========================= NEWSLETTER-1 ==========================-->
+       
+        
+        <!--======================= FOOTER =======================-->
+         <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+        
+            <div id="footer-top" class="banner-padding ftr-top-black ftr-text-white">
+                <div class="container">
+                    <div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-about">
+                            <h3 class="footer-heading">About Us</h3>
+                            <p>Valmiki Matrimoney is a matchmaking service created for parents who are looking for a life partner for their loved ones. </p>
+                           
+                        </div><!-- end columns -->
+						
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
+                            <h3 class="footer-heading">Connect Us</h3>
+                            <ul class="list-unstyled">
+                            	
+                            	<li><span><i class="fa fa-phone"></i></span>94495 70971
+ / 96200 22524 / 94837 77779 (Avinash)</li>
+                                <li style='font-size:16px'><span><i class="fa fa-envelope"></i></span>info@valmikimatrimonial.in</li>
+                            </ul>
+                        </div><!-- end columns -->
+						
+						
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-contact">
+                            <h3 class="footer-heading">Reach Us</h3>
+                            <ul class="list-unstyled">
+                            	<li><span><i class="fa fa-map-marker"></i></span>H F Doddamani, H No 2, Shakti Nagar, Gokul Road, Hubli - 580 030
+
+</li>
+                            	
+                            </ul>
+                        </div><!-- end columns -->
+                        
+                          
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-widget ftr-about">
+                            <h3 class="footer-heading">Social Media</h3>
+                            
+                            <ul class="social-links list-inline list-unstyled">
+                            	<li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                            	<li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa fa-google-plus"></i></span></a></li>
+                              
+                                <li><a href="#"><span><i class="fa fa-linkedin"></i></span></a></li>
+                               
+                            </ul>
+                        </div><!-- end columns -->
+                        
+                        
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-top -->
+
+            <div id="footer-bottom" class="ftr-bot-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="copyright">
+                            <p>© 2018 <a href="#">Valmiki Matrimony</a>. All rights reserved.</p>
+                        </div><!-- end columns -->
+                        
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="terms">
+                            <ul class="list-unstyled list-inline">
+                            	<li><a href="#">Design & Developed by <a href="#">BSA Technologies
+								</a></li>
+                               
+                            </ul>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-bottom -->
+            
+        </section><!-- end footer -->
+        
+        <!-- Page Scripts Starts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom-navigation.js"></script>
+        <!-- Page Scripts Ends -->
+    </body>
+</html>

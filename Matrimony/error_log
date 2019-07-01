@@ -1,0 +1,12 @@
+[28-Dec-2018 10:20:15 Etc/GMT] PHP Notice:  Undefined index: job in /home/valmikimatrimony/public_html/more_details.php on line 9
+[01-Jan-2019 13:29:59 Etc/GMT] PHP Notice:  Undefined index: status in /home/valmikimatrimony/public_html/viewprofile.php on line 5
+[01-Jan-2019 13:29:59 Etc/GMT] PHP Notice:  Undefined index: uname in /home/valmikimatrimony/public_html/register_details.php on line 4
+[01-Jan-2019 13:29:59 Etc/GMT] PHP Notice:  Undefined index: password in /home/valmikimatrimony/public_html/register_details.php on line 5
+[01-Jan-2019 13:29:59 Etc/GMT] PHP Notice:  Undefined index: status in /home/valmikimatrimony/public_html/register_details.php on line 9
+[01-Jan-2019 13:31:18 Etc/GMT] PHP Notice:  Undefined index: uname in /home/valmikimatrimony/public_html/view_details.php on line 4
+[01-Jan-2019 13:31:18 Etc/GMT] PHP Notice:  Undefined index: password in /home/valmikimatrimony/public_html/view_details.php on line 5
+[01-Jan-2019 13:31:18 Etc/GMT] PHP Notice:  Undefined index: status in /home/valmikimatrimony/public_html/view_details.php on line 9
+[01-Jan-2019 13:31:20 Etc/GMT] PHP Notice:  Undefined index: uname in /home/valmikimatrimony/public_html/register_details.php on line 4
+[01-Jan-2019 13:31:20 Etc/GMT] PHP Notice:  Undefined index: password in /home/valmikimatrimony/public_html/register_details.php on line 5
+[01-Jan-2019 13:31:20 Etc/GMT] PHP Notice:  Undefined index: status in /home/valmikimatrimony/public_html/register_details.php on line 9
+[22-Jun-2019 07:44:11 Etc/GMT] PHP Notice:  Undefined index: job in /home/valmikimatrimony/public_html/more_details.php on line 9

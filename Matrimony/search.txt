@@ -1,0 +1,251 @@
+      
+            <div class="search-tabs" id="search-tabs-3">
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-pd-r">
+                      
+
+                            <div class="tab-content">
+
+                                
+                                
+                                <div id="hotels" class="tab-pane in active">
+                                    <form action="new 2.php" method='post'>
+                                        <div class="row">
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                                        <div class="form-group left-icon">
+                                                            <label style='color:white'>I'm looking for a</label>
+                                                             <select class="form-control" name='looking'>
+                                                                
+                                                                <option value="">Select</option>
+                                                                <option value="Female">Female</option>
+                                                                <option value="Male">Male</option>
+                                                               
+                                                            </select>
+                                                          
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                     <div class="col-xs-6 col-sm-6 col-md-2">
+                                                        <div class="form-group right-icon">
+                                                            <label style='color:white'>Age</label>
+                                                            <select id="age" name="toage" class="form-control" width="100px">
+											 <option value="">Select</option>
+											 <option value="18">18</option>
+											  <option value="19">19</option>
+											  <option value="20">20</option>
+											  <option value="21">21</option>
+											  <option value="22">22</option>
+											  <option value="23">23</option>
+											  <option value="24">24</option>
+											  <option value="25">25</option>
+											  <option value="26">26</option>
+											  <option value="27">27</option>
+											  <option value="28">28</option>
+											  <option value="29">29</option>
+											  <option value="30">30</option>
+											  <option value="31">31</option>
+											  <option value="32">32</option>
+											  <option value="33">33</option>
+											  <option value="34">34</option>
+											  <option value="35">35</option>
+											  <option value="36">36</option>
+											  <option value="37">37</option>
+											  <option value="38">38</option>
+											  <option value="39">39</option>
+											  <option value="40">40</option>
+											  <option value="41">41</option>
+											  <option value="42">42</option>
+											  <option value="43">43</option>
+											  <option value="44">44</option>
+											  <option value="45">45</option>
+											  <option value="46">46</option>
+											  <option value="47">47</option>
+											  <option value="48">48</option>
+											  <option value="49">49</option>
+											  <option value="50">50</option>
+											  <option value="51">51</option>
+											  <option value="52">52</option>
+											  <option value="53">53</option>
+											  <option value="54">54</option>
+											  <option value="55">55</option>
+											  <option value="56">56</option>
+											  <option value="57">57</option>
+											  <option value="58">58</option>
+											  <option value="59">59</option>
+											  <option value="60">60</option>
+											  <option value="61">61</option>
+											  <option value="62">62</option>
+											  <option value="63">63</option>
+											  <option value="64">64</option>
+											  <option value="65">65</option>
+											  <option value="66">66</option>
+											  <option value="67">67</option>
+											  <option value="68">68</option>
+											  <option value="69">69</option>
+											  <option value="70">70</option>
+										</select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-2">
+                                                        <div class="form-group right-icon">
+                                                            <label style='color:white'> Age </label>
+                                                            <select id="age" name="fromage" class="form-control" width="100px">
+											 <option value="">Select</option>
+											 <option value="18">18</option>
+											  <option value="19">19</option>
+											  <option value="20">20</option>
+											  <option value="21">21</option>
+											  <option value="22">22</option>
+											  <option value="23">23</option>
+											  <option value="24">24</option>
+											  <option value="25">25</option>
+											  <option value="26">26</option>
+											  <option value="27">27</option>
+											  <option value="28">28</option>
+											  <option value="29">29</option>
+											  <option value="30">30</option>
+											  <option value="31">31</option>
+											  <option value="32">32</option>
+											  <option value="33">33</option>
+											  <option value="34">34</option>
+											  <option value="35">35</option>
+											  <option value="36">36</option>
+											  <option value="37">37</option>
+											  <option value="38">38</option>
+											  <option value="39">39</option>
+											  <option value="40">40</option>
+											  <option value="41">41</option>
+											  <option value="42">42</option>
+											  <option value="43">43</option>
+											  <option value="44">44</option>
+											  <option value="45">45</option>
+											  <option value="46">46</option>
+											  <option value="47">47</option>
+											  <option value="48">48</option>
+											  <option value="49">49</option>
+											  <option value="50">50</option>
+											  <option value="51">51</option>
+											  <option value="52">52</option>
+											  <option value="53">53</option>
+											  <option value="54">54</option>
+											  <option value="55">55</option>
+											  <option value="56">56</option>
+											  <option value="57">57</option>
+											  <option value="58">58</option>
+											  <option value="59">59</option>
+											  <option value="60">60</option>
+											  <option value="61">61</option>
+											  <option value="62">62</option>
+											  <option value="63">63</option>
+											  <option value="64">64</option>
+											  <option value="65">65</option>
+											  <option value="66">66</option>
+											  <option value="67">67</option>
+											  <option value="68">68</option>
+											  <option value="69">69</option>
+											  <option value="70">70</option>
+										</select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+													
+													<div class="col-xs-12 col-sm-6 col-md-2">
+                                                        <div class="form-group left-icon">
+                                                            <label style='color:white'>Qualification</label>                                                         
+                                                                <select class="form-control" name="education" id="education" />
+																	<option value=''>Qualification</option>
+																		<option value="">Select</option>
+																		<option value='10th'>10th</option>
+																		<option value='PUC'>PUC</option>
+																		<option value='ITI'>ITI</option>
+																	    <option value='Diploma'>Diploma</option>
+																		   <option value='BA'>BA</option>
+																		   <option value='MA'>MA</option> 
+																		   <option value='Bsc'>Bsc</option>
+																		   <option value='Msc'>Msc</option>
+																		   <option value='BCA'>BCA</option>
+																		   <option value='MCA'>MCA</option>
+																		   <option value='BCom'>BCom</option>
+																		   <option value='Mcom'>Mcom</option>
+																		   <option value='MBA'>MBA</option>
+																		   <option value='Bed'>Bed</option>
+																		   <option value='Lawyer'>Lawyer</option>
+																		   <option value='Medical'>Medical</option>
+																		   <option value='BE Electrical'>BE Electrical</option>
+																		   <option value='BE Computer & science'>BE Computer & science</option>
+																		   <option value='BE Information Science'>BE Information Science</option>
+																		   <option value='BE Mechanical'>BE Mechanical</option>
+																		   <option value='BE Electronics'>BE Electronics</option>
+																		   <option value='BE Aeroneutical'>BE Aeroneutical</option>
+																		   <option value='BE metlargy'>BE metlargy</option>
+																		   <option value='BE Chemical'>BE Chemical</option>
+																		   <option value='Fashion Designing'>Fashion Designing</option>
+																		   <option value='Others'>Others</option>
+																		   </select>
+                                                          
+                                                        </div>
+                                                    </div><!-- end columns -->
+													<div class="col-xs-12 col-sm-6 col-md-2">
+                                                        <div class="form-group left-icon">
+                                                            <label style='color:white'>Job</label>
+                                                             <select class="form-control" name='job'id='job'>
+                                                               <option value="">Select</option>
+															  <option value='job'>job</option>
+																 <option value='farmer'>Farmer</option>
+															   <option value='Business'>Business</option>
+															   <option value='Government'>Government</option>
+															   <option value='IT'>IT</option>
+															   <option value='Lawyer'>Lawyer</option>
+															   <option value='Doctor'>Doctor</option>
+															   <option value='Engineer'>Engineer</option>
+															   <option value='Others'>Others</option>
+															   <option value='Teacher'>Teacher</option></select>
+															</select>
+                                                          
+                                                        </div>
+                                                    </div><!-- end columns -->
+													
+													
+													<div class="col-xs-12 col-sm-6 col-md-2">
+                                                        <div class="form-group left-icon">
+                                                            <label style='color:white'>Region</label>
+                                                             <select class="form-control" name='region'>
+															 <option value="">Select</option>
+                                                                <option value="North Karnataka">North Karnataka</option>
+                                                                <option value="South Karnataka">South Karnataka</option>
+                                                              </select>
+                                                        </div>
+                                                    </div><!-- end columns -->
+												 </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                           
+                                            
+                                            <center><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                                                <button class="btn btn-orange"><a href="search.php">Search</a></button>
+                                            </div><!-- end columns --></center>
+                                            
+                                        </div><!-- end row -->
+                                    </form>
+                                </div><!-- end hotels -->
+
+                               
+
+                                
+                                
+                            </div><!-- end tab-content -->
+
+                        </div><!-- end columns -->
+                        
+                       
+                                 
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end search-tabs -->
